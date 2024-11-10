@@ -1,0 +1,31 @@
+{
+  "name": "as",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsc",
+    "start": "node build/server.js",
+    "migrate:dev":"prisma migrate dev",
+    "migrate:deploy":"prisma migrate deploy"
+  },
+  "author": "Frank San - Estudo",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.8.4",
+    "nodemon": "^3.1.7",
+    "prisma": "^5.21.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.21.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "zod": "^3.23.8"
+  }
+}
